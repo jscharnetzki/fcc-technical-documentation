@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    color: black;
+    background-color: #F0F0F0;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    font-size: 12pt;
+}
+
+.navbar {
+    position: fixed;
+    width: 30%;
+    min-width: 25%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #D9DDDC;
+    border-right: 2px solid black;
+    z-index: 1;
+}
+
+.navbar > header {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 16pt;
+    margin-top: 10px;
+}
+
+.navbar > section > p {
+    padding: 1px 5px;
+    margin: 5px;
+}
+
+
+.divider {
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.main-doc {
+    margin-left: 30%; 
+    width: 70%;
+    height: 100%;
+    padding: 0px 0px 0px 10px;
+}  
+
+
+.main-doc > .main-section > header {
+    font-weight: bold;
+    font-size: 16pt;
+    padding: 15px 0px 5px 0px;
+}
+
+.main-doc > .main-section > p {
+    margin-left: 5px;
+}
+
+.main-doc > #Reference > ul > li {
+    margin-bottom: 20px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #D9DDDC;
+    color: darkslategrey;
+    padding: 5px 5px 5px 10px;
+    margin: 2.5px 5px 5px 10px;
+    border-radius: 2.5px;
+}
+
+ul > li {
+    margin-left: 25px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-right: 0;
+    }
+    .main-doc {
+        width: 100%;
+        margin: 0;
+    }
+}
